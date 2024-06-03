@@ -7,10 +7,14 @@ void main() {
 }
 
 const kHomeScreenRoute = '';
+const kRoutesList = [kHomeScreenRoute, kHomeScreenRoute, kHomeScreenRoute];
 
-/// Speed
+int selectedIndex = 0;
+
+/// Execution Speed
 /// MacOS 1st run: 275s
 /// MacOS hot restart: 1.2s
+/// MacOS 2nd run: 17s
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
